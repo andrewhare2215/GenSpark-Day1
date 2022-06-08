@@ -8,33 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form id="createAccount" action="javascript:void(0);">
         <h1 class="Registration"> Registration </h1>
 
-        <div> <label> Full Name </label>
-        <input type="text" placeholder= "Enter Name Here" required> </div>
+        <div class="input"> <label for = "fullname"> Full Name </label>
+        <input id="fullname" name="fullname" type="text" placeholder= "Enter Name Here" > <p> Error Message </p> </div>
 
-        <div> <label> Email </label>
-        <input type="email" placeholder= "xxxxx@xxxxx.com" required> </div>
+        <div class="input"> <label> Email </label>
+        <input id="email" name="email" type="email" placeholder= "xxxxx@xxxxx.com" > <p> Error Message </p>   </div>
 
-        <div> <label> Phone </label>
-        <input type="number" placeholder= "1111111111" required> </div>
+        <div class="input"> <label> Phone </label>
+        <input id="phone" name="phone" type="number" placeholder= "1111111111" > <p> Error Message </p>  </div>
  
-        <div> <label> Create Username </label>
-        <input type="text" placeholder= "Create Username" required> </div>
+        <div class="input"> <label> Create Username </label>
+        <input id="username" name="username" type="text" placeholder= "Create Username" > <p> Error Message </p> </div>
 
-        <div> <label> Create New Password </label>
-        <input type="password" placeholder ="Create Password" required> </div>
+        <div class="input"> <label> Create New Password </label>
+        <input id="password" name="password" type="password" placeholder ="Create Password" > <p> Error Message </p>  </div>
 
-        <div> <label> Confirm Password </label>
-        <input type="password" placeholder ="Re-enter Password" required> </div>
+        <div class="input "> <label> Confirm Password </label>
+        <input id="confirm-password" type="password" placeholder ="Re-enter Password" > <p> Error Message </p> </div>
 
-        <div> <label style="font-size: 10px; ;">I agree to the <a href="termsandconditions.html">Terms and Conditions</a> 
-        </label> <input type="checkbox" required> </div>
+        <div> <label class="termsText" style="font-size: 10px">I agree to the <a href="termsandconditions.html"> Terms and Conditions </a> 
+        </label> <input type = "checkbox" class="termsBox" required > </div>
 
-        <div> <button type="submit"> Register </button> </div>
+        <div> <button onclick="validateForm()"> Register </button> </div>
 
-        <div> <label>Already have an account? <a href="Log-in.html">Log in.</a></label></div>
+        <div> <label style="font-size: 10px">Already have an account? <a href="Log-in.html">Log in.</a></label></div>
     </form>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

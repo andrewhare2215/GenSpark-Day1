@@ -40,8 +40,8 @@ h1{
 
 label, input {
     
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 5px;
     margin-left: 10px;
 }
 
@@ -50,12 +50,37 @@ label { margin-bottom: 5px;
     padding: 5px;
     margin-left: 10px;
 }
+.termsText{
+    float:left;
+}
+
+.termsBox {
+    float: left;
+    margin-right: 20vh;
+}
+
+
 
 button{
-    width: 50%;
+    width: 75%;
+    margin-top: 20px;
     margin-bottom: 20px;
-    position: relative;
-    align-self: center;
     background-image: linear-gradient(#2193b0,#6dd5ed);
     
+    
 }
+
+.input p {
+    visibility: hidden;
+    font-size: 0px;
+    color: red; 
+    text-align: right;
+}
+
+.error p {
+    visibility : visible;
+    font-size: 14px;
+    color: red;
+    text-align: right;
+}
+
